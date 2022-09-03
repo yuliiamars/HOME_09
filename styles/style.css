@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-    max-width: 1216px;
+    max-width: 1218px;
     margin: auto;
     padding: 0 12px;
 }
@@ -36,12 +36,19 @@ body {
 .team {
     margin-bottom: 60px;
     position: relative;
-    background-color: #f7fafc;
+    text-align: center;
 }
 
 .title_hidden {
     position: absolute;
-    z-index: -1;
+    left: -99999999999px;
+}
+
+.employee {
+    display: inline-block;
+    width: 28%;
+    vertical-align: top;
+    margin-bottom: 20px;
 }
 
 @media (min-width: 768px) {
@@ -53,9 +60,17 @@ body {
     .team {
         margin-bottom: 90px;
     }
+
+    .employee {
+        margin-bottom: 50px; 
+    }
 }
 
 @media (min-width: 1024px) {
+    .container {
+        padding: 0;
+    }
+
     .header {
         width: 677px;
         margin: 80px auto;
@@ -63,5 +78,16 @@ body {
 
     .team {
         margin-bottom: 120px;
+    }
+
+    .employee {
+        display: block;
+        float: left;
+        margin-right: 8%;
+        margin-bottom: 80px;
+    }
+
+    .employee_no-right-margin {
+        margin-right: 0;
     }
 }
